@@ -12,8 +12,8 @@ For detailed documentation of how to use Hologres and Flink together, please see
  
 ## Pre-requisite
 
-since Hologres connector is not open-sourced and available mvn central yet, 
-you have to get the connector jar from Hologres team, put it into `/libarary` dir, and 
+Since Hologres connector is not open-sourced and available on mvn central yet, 
+please contact Hologres team to get the connector jar, put it into `/libarary` dir, and 
 run the `install-hologress-connector-to-local-mvn.sh` first to install the jar into your 
 local mvn repository. We are sorry for the inconvenience, and the connector will be open-sourced 
 soon.
