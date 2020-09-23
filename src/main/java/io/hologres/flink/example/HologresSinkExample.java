@@ -58,13 +58,12 @@ public class HologresSinkExample {
                     "  ip string," +
                     "  sale_timestamp timestamp" +
                     ") with (" +
-                    "  'connector.type'='hologres'," +
-                    "  'connector.database' = '%s'," +
-                    "  'connector.table' = '%s'," +
-                    "  'connector.username' = '%s'," +
-                    "  'connector.password' = '%s'," +
-                    "  'connector.endpoint' = '%s'," +
-                    "  'connector.proxy_sink' = 'true'" +
+                    "  'connector'='hologres'," +
+                    "  'dbname' = '%s'," +
+                    "  'tablename' = '%s'," +
+                    "  'username' = '%s'," +
+                    "  'password' = '%s'," +
+                    "  'endpoint' = '%s'" +
                     ")", database, tableName, userName, password, endPoint);
     // Using a random data generator, and write to Hologres directly
     env.sqlUpdate(CREATE_HOLOGRES_TABLE);

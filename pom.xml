@@ -29,8 +29,8 @@ under the License.
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<flink.version>1.10.0</flink.version>
-		<hologres.flink.version>1.10</hologres.flink.version>
+		<flink.version>1.11.0</flink.version>
+		<hologres.flink.version>1.11-SNAPSHOT</hologres.flink.version>
 		<java.version>1.8</java.version>
 		<scala.binary.version>2.11</scala.binary.version>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
@@ -59,8 +59,8 @@ under the License.
 		<!-- Hologres connector -->
 
 		<dependency>
-			<groupId>org.apache.flink</groupId>
-			<artifactId>hologres-flink-connector</artifactId>
+			<groupId>com.alibaba.ververica</groupId>
+			<artifactId>ververica-connector-hologres</artifactId>
 			<version>${hologres.flink.version}</version>
 			<classifier>jar-with-dependencies</classifier>
 		</dependency>
